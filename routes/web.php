@@ -21,6 +21,8 @@ Route::get('/', function () {
  * 则该请求将会由 StaticPagesController 的 home 方法进行处理。
  * 我们将在下节创建 StaticPagesController，为你讲解控制器在收到请求后如何进行相关操作。
  */
-Route::get('/','StaticPagesController@home');
-Route::get('/help','StaticPagesController@help');
-Route::get('/about','StaticPagesController@about');
+Route::get('/','StaticPagesController@home')->name('home'); // 首页
+Route::get('/help','StaticPagesController@help')->name('help'); // 帮助页
+Route::get('/about','StaticPagesController@about')->name('about');// 关于页
+
+Route::get('signup','UsersController@create')->name('signup');// 注册页
