@@ -1,5 +1,4 @@
 <?php
-
 return [
 
     /*
@@ -78,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'zh-cn',
 
     /*
     |--------------------------------------------------------------------------
@@ -227,5 +226,5 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
 ];
+
